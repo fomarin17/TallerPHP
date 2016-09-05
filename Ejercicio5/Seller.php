@@ -7,17 +7,16 @@ class Seller
     private $listItems = array();
     private $salaryBase;
 
-	function __construct($name, $salaryBase)
+	function __construct()
 	{
-	    $this->name = $name;
-        $this->salaryBase = $salaryBase;
 	}
 
 	function __destruct()
-	{
-	}
+    {
+        // TODO: Implement __destruct() method.
+    }
 
-	public function addItem($item){
+    public function addItem($item){
 	    $this->listItems[] = $item;
     }
 
